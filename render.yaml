@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ketustok-api
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    envVars:
+      - key: MONGO_URI
+        value: ton_url_mongodb
